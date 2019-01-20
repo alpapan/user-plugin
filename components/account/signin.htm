@@ -1,7 +1,12 @@
-<form
-    data-request="onSignin">
-    <div class="form-group">
-        <label for="userSigninLogin">{{ loginAttributeLabel }}</label>
+<div class="title">
+  <h3>Sign in</h3>
+</div>
+
+<form data-request="onSignin">
+    <div class="form-group field">
+
+        <label class="label" for="userSigninLogin">{{ loginAttributeLabel }}</label>
+        <div class="control">
         <input
             name="login"
             type="text"
@@ -9,9 +14,11 @@
             id="userSigninLogin"
             placeholder="Enter your {{ loginAttributeLabel|lower }}" />
     </div>
+    </div>
 
-    <div class="form-group">
-        <label for="userSigninPassword">Password</label>
+    <div class="form-group field">
+        <label class="label" for="userSigninPassword">Password</label>
+        <div class="control">
         <input
             name="password"
             type="password"
@@ -20,5 +27,6 @@
             placeholder="Enter your password" />
     </div>
 
-    <button type="submit" class="btn btn-default">Sign in</button>
+    </div>
+    <button type="submit" class="btn btn-default button is-primary">Sign in</button>
 </form>
